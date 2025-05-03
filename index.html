@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Axel Hub ┋✿</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+    }
+    header {
+      background: #1a1a1a;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      border-radius: 50%;
+      width: 50px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .button {
+      background: #6b46c1;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background: #805ad5;
+    }
+    code {
+      background: #1e1e1e;
+      padding: 10px;
+      display: block;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    a {
+      color: #00afff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a1a;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <img src="https://avatars.githubusercontent.com/u/169439230?v=4" alt="Avatar GitHub">
+    <h1>Axel Hub ┋✿</h1>
+  </div>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#script">Script</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <div class="section" id="inicio">
+    <h2>📌 Bienvenido a Axel Hub</h2>
+    <p>Un script poderoso para Slap Tower y más. Con funciones como teleport, infinite jump, speed, y una interfaz elegante.</p>
+  </div>
+
+  <div class="section" id="script">
+    <h2>💻 Script</h2>
+    <p>Copiá este script y pegalo en tu exploit favorito:</p>
+    <code id="scriptText">loadstring(game:HttpGet("https://raw.githubusercontent.com/axelzScripts/roblox/main/axelhub.lua"))()</code>
+    <button class="button" onclick="copyScript()">📋 Copiar Script</button>
+  </div>
+
+  <div class="section" id="contacto">
+    <h2>📦 Granito de arena</h2>
+    <p><strong>GitHub:</strong> <a href="https://github.com/axelzScripts" target="_blank">https://github.com/axelzScripts</a></p>
+    <p><strong>YouTube:</strong> <a href="https://www.youtube.com/@AxellVisualST" target="_blank">https://www.youtube.com/@AxellVisualST</a></p>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Axel Hub ┋✿ | Desarrollado por Axel
+</footer>
+
+<script>
+  function copyScript() {
+    navigator.clipboard.writeText(document.getElementById("scriptText").innerText);
+    alert("✅ Script copiado al portapapeles");
+  }
+</script>
+
+</body>
+</html>
